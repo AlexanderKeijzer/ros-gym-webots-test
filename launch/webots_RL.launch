@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find gym_env_webots)/launch/webots_p-rob3.launch"/>
+    <node name="RL" pkg="gym_test" type="RL_node.py" output="screen"/>
+</launch>
